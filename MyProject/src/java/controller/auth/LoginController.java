@@ -98,11 +98,7 @@ public class LoginController extends HttpServlet {
                         response.sendRedirect("admin/editatts");
                     }
                 }
-            } else {
-                request.getRequestDispatcher("view/auth/chooserole.jsp").forward(request, response);
             }
-            
-
         }
 
     }
