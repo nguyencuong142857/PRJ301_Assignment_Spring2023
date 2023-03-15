@@ -4,7 +4,7 @@
  */
 package controller.auth;
 
-import dal.AccountDBContext;
+import dao.AccountDBContext;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;

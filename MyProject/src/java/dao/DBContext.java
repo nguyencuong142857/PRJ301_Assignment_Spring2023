@@ -7,26 +7,33 @@ package dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
  *
- * @author Admin
+ * @author Ngo Tung Son
  */
-public class DBContext {
-    public Connection connection;
+public abstract class DBContext<T> {
+    protected Connection connection;
     public DBContext()
     {
         try {
-            //Change the username password and url to connect your own database
-            String username = "sa";
-            String password = "12345";
-            String url = "jdbc:sqlserver://localhost:1433;databaseName=PRJ_Spring_23";
+            String user = "sa";
+            String pass = "12345";
+            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=PRJ301_FALL2022_Assignment_Demo";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            connection = DriverManager.getConnection(url, username, password);
-        } catch (ClassNotFoundException | SQLException ex) {
+            connection = DriverManager.getConnection(url, user, pass);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
             Logger.getLogger(DBContext.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    public abstract void insert(T model); //INSERT INTO
+    public abstract void update(T model); // UPDATE SET
+    public abstract void delete(T model); // DELETE FROM 
+    public abstract T get(int id); // SELECT * FROM WHERE id = 
+    public abstract ArrayList<T> list(); //override SELECT * FROM
 }
