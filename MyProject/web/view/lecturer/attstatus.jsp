@@ -65,7 +65,7 @@
         </c:if>
         <c:if   test="${param.gid ne null}">
             <%! int numSession;%>
-            <table>
+            <table border="1">
                 <% int numSession=0;%>
                 <tr class="header">
                     <td>No</td>
