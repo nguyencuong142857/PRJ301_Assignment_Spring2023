@@ -40,38 +40,6 @@
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LogoutController</servlet-name>
-        <url-pattern>/logout</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>HomeController</servlet-name>
-        <url-pattern>/lecturer/home</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LecturerTimetableController</servlet-name>
-        <url-pattern>/lecturer/timetable</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LecturerAttController</servlet-name>
-        <url-pattern>/lecturer/takeatt</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AttStatusController</servlet-name>
-        <url-pattern>/lecturer/attstatus</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>StudentTimtableController</servlet-name>
-        <url-pattern>/student/timetable</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>EditAttController</servlet-name>
-        <url-pattern>/admin/editatts</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ActivityDetailsController</servlet-name>
-        <url-pattern>/student/activitydetails</url-pattern>
-    </servlet-mapping>
     <session-config>
         <session-timeout>
             60
