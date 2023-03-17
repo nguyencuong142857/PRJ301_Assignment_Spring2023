@@ -44,6 +44,10 @@
         <servlet-name>LogoutController</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomeController</servlet-name>
+        <url-pattern>/lecturer/home</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             60
