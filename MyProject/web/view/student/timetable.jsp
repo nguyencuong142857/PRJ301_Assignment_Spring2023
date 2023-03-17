@@ -70,7 +70,7 @@
 
         </div>
 
-        <table>
+        <table border="1" >
             <tr class="time">
                 <td>
                     <form action="timetable" method="GET">
