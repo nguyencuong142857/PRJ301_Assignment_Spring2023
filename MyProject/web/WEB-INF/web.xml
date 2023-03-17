@@ -64,6 +64,10 @@
         <servlet-name>StudentTimtableController</servlet-name>
         <url-pattern>/student/timetable</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ActivityDetailsController</servlet-name>
+        <url-pattern>/student/activitydetails</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             60
