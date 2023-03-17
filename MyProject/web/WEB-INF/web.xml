@@ -52,6 +52,14 @@
         <servlet-name>LecturerTimetableController</servlet-name>
         <url-pattern>/lecturer/timetable</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LecturerAttController</servlet-name>
+        <url-pattern>/lecturer/takeatt</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AttStatusController</servlet-name>
+        <url-pattern>/lecturer/attstatus</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             60
