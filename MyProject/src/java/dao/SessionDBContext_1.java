@@ -25,7 +25,7 @@ import model.TimeSlot;
  *
  * @author Ngo Tung Son
  */
-public class SessionDBContext_1 extends dal.DBContext<Session> {
+public class SessionDBContext_1 extends dao.DBContext<Session> {
     
     public ArrayList<Session> getListSession(int lid){
         ArrayList<Session> sess = new ArrayList<>();
