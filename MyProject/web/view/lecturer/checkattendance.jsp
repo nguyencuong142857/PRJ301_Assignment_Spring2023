@@ -68,7 +68,7 @@
                     <td>No.</td>
                     <td>StudentID</td>
                     <td>Full Name</td>
-                    <td>Image</td>
+                    <!--<td>Image</td>-->
                     <c:if test="${helper.compare(requestScope.ses.date,requestScope.today) eq 0}">
                         <td>Present</td>
                         <td>Absent</td>
@@ -87,7 +87,7 @@
                             <input type="hidden" name="stdid" value="${a.student.id}"/>
                         </td>
                         <td>${a.student.name}</td>
-                        <td><img src="../${a.student.imageURL}" alt="" style="width: 150px;"></td>
+                        <!--<td><img src="../${a.student.imageURL}" alt="" style="width: 150px;"></td>-->
                         <!--<td><img src="../image/avatar/000001.png" alt=""></td>-->
                         <c:if test="${helper.compare(requestScope.ses.date,requestScope.today) eq 0}">
                             <td><input type="radio"
