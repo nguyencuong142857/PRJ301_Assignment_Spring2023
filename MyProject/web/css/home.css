@@ -1,0 +1,18 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Nov 3, 2022, 1:00:17 AM
+    Author     : admin
+*/
+.header{
+    text-decoration: none;
+    background-color: rgba(77, 158, 77, 0.9);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
